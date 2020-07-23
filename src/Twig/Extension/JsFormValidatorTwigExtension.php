@@ -44,10 +44,10 @@ class JsFormValidatorTwigExtension extends AbstractExtension
     public function getFunctions()
     {
         return array(
-            new \TwigFunction('init_js_validation', array($this, 'getJsValidator'), array(
+            new TwigFunction('init_js_validation', array($this, 'getJsValidator'), array(
                 'is_safe' => array('html')
             )),
-            new \TwigFunction('js_validator_config', array($this, 'getConfig'), array(
+            new TwigFunction('js_validator_config', array($this, 'getConfig'), array(
                 'is_safe' => array('html')
             )),
         );
